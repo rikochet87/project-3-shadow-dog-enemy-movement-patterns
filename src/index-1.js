@@ -2,8 +2,8 @@
 import img1 from "../img/enemy_bat_1.png";
 const canvas = document.getElementById("canvas1");
 const ctx = canvas.getContext("2d");
-CANVAS_WIDTH = canvas.width = 500;
-CANVAS_HEIGHT = canvas.height = 900;
+CANVAS_WIDTH = (canvas.width = 500);
+CANVAS_HEIGHT = (canvas.height = 900);
 const numberOfEnemies = 100;
 const enemiesArray = [];
 
@@ -12,7 +12,6 @@ function createImage(imageSrc) {
   image.src = imageSrc;
   return image;
 }
-
 
 const enemyImage = createImage(img1);
 let gameFrame = 0;
@@ -30,7 +29,7 @@ class Enemy {
     this.flapSpeed = Math.floor(Math.random() * 3 + 1);
   }
   update() {
-    this.x += Math.random() * 5 - 2.5; 
+    this.x += Math.random() * 5 - 2.5;
     this.y += Math.random() * 5 - 2.5;
 
     //animate sprites

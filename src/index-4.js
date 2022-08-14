@@ -2,8 +2,8 @@
 import img4 from "../img/enemy_spinner.png";
 const canvas = document.getElementById("canvas1");
 const ctx = canvas.getContext("2d");
-CANVAS_WIDTH = canvas.width = 500;
-CANVAS_HEIGHT = canvas.height = 900;
+CANVAS_WIDTH = (canvas.width = 500);
+CANVAS_HEIGHT = (canvas.height = 900);
 const numberOfEnemies = 30;
 const enemiesArray = [];
 

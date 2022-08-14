@@ -1,4 +1,4 @@
-/**@type {HTMLCanvasElement}*/
+// /**@type {HTMLCanvasElement}*/
 import img3 from "../img/enemy_ghost_1.png";
 const canvas = document.getElementById("canvas1");
 const ctx = canvas.getContext("2d");

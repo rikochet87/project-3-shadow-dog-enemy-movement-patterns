@@ -1,6 +1,6 @@
-/**@type {HTMLCanvasElement}*/
+// /**@type {HTMLCanvasElement}*/
 import img1 from "../img/enemy_bat_1.png";
-const canvas = document.getElementById("canvas1");
+const canvas = window.document.getElementById(`canvas1`);
 const ctx = canvas.getContext("2d");
 CANVAS_WIDTH = (canvas.width = 500);
 CANVAS_HEIGHT = (canvas.height = 900);
